@@ -19,7 +19,7 @@
   <main>
     <form action="index.html" method="post">
         <fieldset>
-            <legend>Contact Information</legend>
+            <legend class="contact">Contact Information</legend>
             <div>
                 <label for="name">Full Name</label>
                 <input type="text" id="name" name="user_name" placeholder="Required">
@@ -103,26 +103,26 @@
         </fieldset>
 
         <fieldset>
-            <legend>Newsletter</legend>
-            <label>Select the newsletters you would like to receive</label><br>
-            <div>
+            <legend class="newsletter">Newsletter</legend>
+            <label class="checkbox_instruction">Select the newsletters you would like to receive</label>
+            <div class="html">
                 <input type="checkbox" id="html" value="html" name="news"><label for="html">HTML News</label><br>
             </div>
-            <div>
+            <div class="css">
                 <input type="checkbox" id="css" value="css" name="news"><label for="css">CSS News</label><br>
             </div>
-            <div>            
+            <div class="javascript">            
                 <input type="checkbox" id="javascript" value="javascript" name="news"><label for="javascript">Javascript News</label><br>
             </div>
-            <label>Newsletter format</label><br>
-            <div>
+            <label class="newsletter_format">Newsletter format</label>
+            <div class="html_format">
                <input type="radio" id="html_format" value="html_format" name="format"><label for="html_format">HTML</label><br>
             </div>
-            <div>
+            <div class="plain_text">
               <input type="radio" id="plain_text" value="plain_text" name="format"><label for="plain_text">Plain text</label><br>
             </div>
             <div>
-                <label for="comment">Other topics you'd like to hear about</label><br>
+                <label for="comment">Other topics you'd like to hear about</label>
                 <textarea id="comment" name="user_comment"></textarea><br>
             </div>
             <button type="submit">Sign Up</button>

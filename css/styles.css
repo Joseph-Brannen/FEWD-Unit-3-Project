@@ -40,7 +40,7 @@ header p {
 }
 
 
-/* MAIN CONTENT */
+/* CONTACT INFORMATION CONTENT */
 
 fieldset:first-child {
     border: none;
@@ -49,7 +49,7 @@ fieldset:first-child {
     margin-right: 0;
 }
 
-legend:first-child {
+.contact {
     width: 100%;
     padding: 1rem 0 .5rem;
     border-top: 2px solid black;
@@ -88,10 +88,79 @@ input[id="zip"] {
   width: 45%; 
 }
 
-/* CONTACT INFORMATION CONTENT */
-
 
 /* NEWSLETTER CONTENT */
 
+fieldset:last-child {
+  border: none;
+}
+
+.newsletter {
+    width: 100%;
+    padding: 1.5rem 0 1rem;
+    border-top: 2px solid black;
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+.checkbox_instruction {
+    padding-left: .25rem;
+    margin: 0 auto .8rem;
+}
+
+.html input, .css input, .javascript input, .html_format input, .plain_text input {
+    width: 5%;
+    display: inline-block;
+    margin-left: .25rem;
+    text-align: left;
+}
+
+.html label, .css label, .javascript label, .html_format label, .plain_text label {
+    width: 80%;
+    display: inline-block;
+    margin-left: .75rem;
+    text-align: left;
+}
+
+.newsletter_format {
+    margin: 1.5rem 0 .8rem .25rem;
+}
+
+label[for="comment"] {
+    margin: 1rem 0 .75rem .25rem;
+}
+
+textarea {
+    display: block;
+    width: 98%;
+    height: 5.5rem;
+    background-color: rgba(211, 211, 211, 0.267);
+    border: none;
+    border-radius: 5px;
+    margin: 0 auto 1rem;
+}
+
+button {
+  display: block;
+  width: 98%;
+  margin: 0 auto;
+  height: 3.25rem;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  font-size: 1.1rem;
+  background-color: #3cb1b4; 
+}
+
 
 /* FOOTER CONTENT */
+
+footer {
+    margin-top: 1rem;
+}
+
+footer p {
+    text-align: center;
+    font-style: italic;
+    font-size: .7rem;
+}
