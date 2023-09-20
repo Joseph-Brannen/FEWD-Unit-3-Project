@@ -193,3 +193,153 @@ footer p {
     font-style: italic;
     font-size: .85rem;
 }
+
+
+
+
+@media screen and (min-width: 321px) and (max-width: 767px) {
+    main {
+        width: 90%; 
+        margin: 0 auto;
+    }
+
+    select {
+        width: 97%;
+    }
+
+    .html input, .css input, .javascript input, .html_format input, .plain_text input {
+        height: .75rem;
+        vertical-align: middle;
+    }
+}
+
+
+
+
+
+@media screen and (min-width: 768px) {
+  main {
+    max-width: 700px;
+    margin: 0 auto;
+  }
+
+
+/* HEADER CONTENT */
+
+  header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  h1 {
+    width: 100%;
+  }
+
+  h2 {
+    width: 100%;
+    font-size: 1.3rem;
+  }
+
+  header p {
+    width: 653px;
+    padding-bottom: 2.5rem;
+  }
+
+
+/* CONTACT INFORMATION CONTENT */
+
+div, label, input, select {
+    display: flex;
+    align-items: center;
+}
+
+.contact {
+    padding-top: 3rem;
+}
+
+label {
+    padding-bottom: .75rem;
+    flex-grow: 1;
+    flex-basis: 20%;
+}
+
+input, select, input[id="zip"] {
+    margin-left: 3rem;
+    flex-basis: 80%;
+}
+
+select {
+    flex-basis: 84%;
+}
+
+input[id="zip"] {
+    flex-basis: 30%;
+    margin-right: 45.5%;
+}
+
+
+/* NEWSLETTER CONTENT */
+
+.newsletter {
+    padding-top: 2.5rem;
+    padding-bottom: 1.25rem;
+}
+
+.checkbox_instruction {
+    padding-left: 0;
+}
+
+.html label, .css label, .javascript label, .html_format label, .plain_text label {
+    flex-grow: 1;
+    flex-basis: 80%;
+    padding-bottom: .75rem;
+}
+
+.html input, .css input, .javascript input, .html_format input, .plain_text input {
+    flex-basis: 5%;
+    height: .75rem;
+    margin-top: 0;
+    margin-left: 0;
+}
+
+.newsletter_format {
+    margin-left: 0;
+    margin-top: .25rem;
+    margin-bottom: .75rem;
+}
+
+.javascript {
+    margin-bottom: 0;
+}
+
+.comment {
+  display: flex;
+  flex-direction: column;
+}
+
+label[for="comment"] {
+  padding-top: .75rem;
+  margin-top: 0;
+  margin-bottom: .5rem; 
+  margin-left: 0;  
+}
+
+textarea {
+    width: 100%;
+    height: 7rem;
+    padding-left: 0;
+    padding-right:0;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+/* FOOTER CONTENT */
+
+footer {
+    margin-top: 2rem;
+    margin-bottom: 4rem;
+}
+
+
+}
