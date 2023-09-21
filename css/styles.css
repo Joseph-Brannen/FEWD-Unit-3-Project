@@ -53,7 +53,7 @@ fieldset:first-child {
     padding: 1.5rem 0 1rem;
     border-top: 2px solid black;
     font-weight: bold;
-    font-size: 1.1rem;
+    font-size: 1.2rem;
 }
 
 label, input, select {
@@ -73,6 +73,10 @@ input, select, textarea {
     background-color: rgba(211, 211, 211, 0.267);
     border: none;
     border-radius: 5px; 
+}
+
+::placeholder {
+    color: #bab7b7;
 }
 
 input, select {
