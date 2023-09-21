@@ -10,10 +10,15 @@ body {
 /* HEADER CONTENT */
 
 header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     padding-bottom: .25rem;
 }
 
-h1 {
+h1 { 
+    width: 100%;
+    align-self: center;
     background-color: #023044;
     color: white;
     text-transform: uppercase;
@@ -230,7 +235,7 @@ footer p {
     flex-direction: column;
   }
 
-  h1, h2, button, textarea {
+  h2, button, textarea {
     width: 100%;
   }
 
