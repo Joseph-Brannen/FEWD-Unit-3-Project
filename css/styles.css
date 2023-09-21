@@ -4,7 +4,7 @@ html {
 }
 
 body {
-    margin: 0;
+    margin: 0 auto;
 }
 
 /* HEADER CONTENT */
@@ -197,7 +197,12 @@ footer p {
 
 
 
-@media screen and (min-width: 321px) and (max-width: 767px) {
+@media screen and (min-width: 321px) and (max-width: 767px) { 
+    header p {
+        width: 80%;
+        margin: 0 auto;
+    }
+    
     main {
         width: 90%; 
         margin: 0 auto;
@@ -218,9 +223,14 @@ footer p {
 
 
 @media screen and (min-width: 768px) {
-  main {
-    max-width: 700px;
-    margin: 0 auto;
+    body {
+        margin: 0 auto;
+        min-width: 700px;
+    }
+  
+    main {
+      max-width: 700px;
+      margin: 0 auto;
   }
 
 
@@ -238,7 +248,9 @@ footer p {
 
   h2 {
     width: 100%;
-    font-size: 1.3rem;
+    font-size: 1.4rem;
+    margin-top: 3rem;
+    margin-bottom: 0;
   }
 
   header p {
@@ -248,6 +260,10 @@ footer p {
 
 
 /* CONTACT INFORMATION CONTENT */
+
+fieldset:first-child {
+    padding-bottom: 2.5rem;
+}
 
 div, label, input, select {
     display: flex;
@@ -260,13 +276,18 @@ div, label, input, select {
 
 label {
     padding-bottom: .75rem;
+    padding-top: .75rem;
     flex-grow: 1;
     flex-basis: 20%;
 }
 
 input, select, input[id="zip"] {
-    margin-left: 3rem;
+    margin-left: 2rem;
     flex-basis: 80%;
+}
+
+input, select {
+    margin-bottom: .75rem;
 }
 
 select {
@@ -283,11 +304,15 @@ input[id="zip"] {
 
 .newsletter {
     padding-top: 2.5rem;
-    padding-bottom: 1.25rem;
+    padding-bottom: .5rem;
 }
 
 .checkbox_instruction {
     padding-left: 0;
+}
+
+.html, .css, .javascript, .html_format, .plain_text {
+   margin-bottom: .5rem; 
 }
 
 .html label, .css label, .javascript label, .html_format label, .plain_text label {
@@ -299,14 +324,13 @@ input[id="zip"] {
 .html input, .css input, .javascript input, .html_format input, .plain_text input {
     flex-basis: 5%;
     height: .75rem;
-    margin-top: 0;
-    margin-left: 0;
+    margin: 0 0 .5rem 0;
 }
 
 .newsletter_format {
     margin-left: 0;
-    margin-top: .25rem;
-    margin-bottom: .75rem;
+    margin-top: .4rem;
+    margin-bottom: .25rem;
 }
 
 .javascript {
@@ -320,9 +344,7 @@ input[id="zip"] {
 
 label[for="comment"] {
   padding-top: .75rem;
-  margin-top: 0;
-  margin-bottom: .5rem; 
-  margin-left: 0;  
+  margin: 0 0 .25rem;  
 }
 
 textarea {
@@ -332,6 +354,10 @@ textarea {
     padding-right:0;
     margin-left: 0;
     margin-right: 0;
+}
+
+button {
+    width: 100%;
 }
 
 /* FOOTER CONTENT */
